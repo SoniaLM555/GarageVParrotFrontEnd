@@ -9240,4 +9240,19 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  margin-bottom: 400px;
+}
+
+footer.footer {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
