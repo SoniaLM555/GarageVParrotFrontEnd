@@ -31,7 +31,9 @@
     <article id="scrollspyVehicles"class="bg-dark text-white">
         <div class="container p-5">
             <h2 class="text-center text-primary">Nos véhicules à vendre</h2>
-            <div class="text-center bg-black">filtre km min max filtre année min max  Filtre Prix min max </div>
+            <div class="text-center bg-black">
+                <p>iltre km min max filtre année min max  Filtre Prix min max </p>f
+            </div>
             <div class="row row-cols-3 align-items-center">
                 <div class="col bg-secondary">
                     <img class="w-100 rounded" src="../images/image SectionVenteCitroen.png"/>
@@ -110,9 +112,9 @@
             <h3 class="text-center text-primary">Entretien</h3>
             <p class="text-center">3 Formules au choix :</p>
                 <div class="row row-cols-3 text-center p-4">
-                    <div class="col">Basic</div>
-                    <div class="col">Total</div>
-                    <div class="col">Intégral</div>
+                    <div class="container col bg-secondary rounded text-primary">Basic</div>
+                    <div class="container col bg-secondary rounded text-primary">Total</div>
+                    <div class="container col bg-secondary rounded text-primary">Intégral</div>
                 </div>
         </div>
     </article>
@@ -145,9 +147,9 @@
             <h2 class="text-center text-primary">Nos clients témoignent</h2>
             <div class="row row-cols-2 align-items-center">
                 <div class="col">
-                    <p class="text-justify">***** “Excellent accueil” Patrick</p>
-                    <p class="text-justify">**** “Un service de qualité” Sylvie</p>
-                    <p class="text-justify">***** “Très pro ! “ François</p>
+                    <p class="text-justify">***** "Excellent accueil" Patrick</p>
+                    <p class="text-justify">**** "Un service de qualité" Sylvie</p>
+                    <p class="text-justify">***** "Très pro !" François</p>
                 </div>
                 <div class="col">
                     <div>
@@ -155,19 +157,30 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="container p-5 bg-primary text-white rounded">
                 <div>
-                    <h3 class="text-center pt-4 text-primary">Nous laisser un témoignage</h3>
-                    <p>Nom</p>
-                    <p>Saisir le nom</p>
-                    <p>Témoignage</p>
-                    <p>Saisir le témoignage</p>
+                    <h3 class="text-center pt-4 text-dark">Nous laisser un témoignage</h3>
                 </div>
                 <div>
-                    <a href="#" class="btn btn-primary">Envoyer</a>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-dark">Nom</label>
+                            <input type="mail" class="form-control" id="name"  placeholder="Saisir votre nom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="testimony" class="form-label text-dark">Témoignage</label>
+                            <input type="text" class="form-control" id="testimony"  placeholder="Saisir votre témoignage">
+                        </div>
+                        <div class="mb-3">
+                            <label for="rate" class="form-label text-dark">Note</label>
+                            <input type="number" class="form-control" id="rate"  >
+                        </div>
+                        <div class= "text-center pt-3">
+                            <button type="submit" class="btn btn-dark">Envoyer</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </article>
-
 </section>
