@@ -24,6 +24,7 @@ p{
 
 .hero-scene{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content:"";
         position: absolute;
@@ -52,4 +53,8 @@ p{
 
 .text-justify{
     text-align: justify;
+}
+
+.form-label{
+    color: $primary
 }

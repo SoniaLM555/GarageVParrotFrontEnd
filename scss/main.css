@@ -9264,6 +9264,7 @@ p {
 
 .hero-scene {
   position: relative;
+  margin-bottom: 15px;
 }
 .hero-scene::before {
   content: "";
@@ -9289,4 +9290,8 @@ p {
 
 .text-justify {
   text-align: justify;
+}
+
+.form-label {
+  color: #F69707;
 }/*# sourceMappingURL=main.css.map */
