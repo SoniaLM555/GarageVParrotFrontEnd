@@ -1,7 +1,8 @@
-<div class="hero-scene text-center text-white">
+<div class="hero-scene">
     <div class="hero-scene-content">
         <a class="btn btn-primary" href="/">Se déconnecter</a>
-        <h1>Espace employé</h1>
+        <a href="/editPassword">Modifier le mot de passe</a>
+        <h1 class="text-center text-white">Espace Employé</h1>
     </div>
 </div>  
 
@@ -53,23 +54,23 @@
                             <form>
                                 <div class="mb-3">
                                     <label for="brand" class="form-label">Marque et Modèle</label>
-                                    <input type="text" class="form-control" id="brand"  placeholder="Saisir la marque et le modèle" value="Peugeot 206">
+                                    <input disabled type="text" class="form-control" id="brand"  placeholder="Saisir la marque et le modèle" value="Peugeot 206">
                                 </div>
                                 <div class="mb-3">
                                     <label for="year" class="form-label">Année</label>
-                                    <input type="number" class="form-control" id="year"  placeholder="Saisir l'année de mise en circulation" value="20013">
+                                    <input disabled type="number" class="form-control" id="year"  placeholder="Saisir l'année de mise en circulation" value="20013">
                                 </div>
                                 <div class="mb-3">
                                     <label for="km" class="form-label">Km</label>
-                                    <input type="number" class="form-control" id="km"  placeholder="Saisir le kilométrage du véhicule" value="120000">
+                                    <input disabled type="number" class="form-control" id="km"  placeholder="Saisir le kilométrage du véhicule" value="120000">
                                 </div>
                                 <div class="mb-3">
                                     <label for="price" class="form-label">Prix</label>
-                                    <input type="number" class="form-control" id="price" placeholder="Saisir le prix TTC du véhicule" value="4000">
+                                    <input disabled type="number" class="form-control" id="price" placeholder="Saisir le prix TTC du véhicule" value="4000">
                                 </div>
                                 <div class="mb-3">
                                     <label for="details" class="form-label">Description</label>
-                                    <input type="text" class="form-control" id="details" placeholder="Saisir la description du véhicule" value="Options : Sièges en cuir, clim.">
+                                    <input disabled type="text" class="form-control" id="details" placeholder="Saisir la description du véhicule" value="Options : Sièges en cuir, clim.">
                                 </div>
                                 <div class= "row row-cols-2 pt-3">
                                     <p class="col text-primary">Charger une image</p>
@@ -92,7 +93,7 @@
                         <input type="text" class="form-control" id="ref"  placeholder="Saisir la référence de l'anonnce">
                     </div>
                     <div class= "text-center pt-3">
-                        <button type="submit" class="btn btn-primary">Modifier</button>
+                        <a href="/editVehicle" type="button" class="btn btn-primary" >Modifier</a>
                     </div>    
                 </form>
             </div>
@@ -118,7 +119,7 @@
                             <form>
                                 <div class="mb-3">
                                     <label for="ref2" class="form-label">Référence de l'annonce</label>
-                                    <input type="text" class="form-control" id="ref2"  placeholder="Saisir la référence de l'anonnce" value="RF456">
+                                    <input disabled type="text" class="form-control" id="ref2"  placeholder="Saisir la référence de l'anonnce" value="RF456">
                                 </div>
                             </form>
                         </div>
@@ -167,21 +168,21 @@
                                 <form>
                                     <div class="mb-3">
                                         <label for="name" class="form-label text-dark">Nom</label>
-                                        <input type="mail" class="form-control" id="name"  placeholder="Saisir votre nom" value="John">
+                                        <input disabled type="mail" class="form-control" id="name"  placeholder="Saisir votre nom" value="John">
                                     </div>
                                     <div class="mb-3">
                                         <label for="testimony" class="form-label text-dark">Témoignage</label>
-                                        <input type="text" class="form-control" id="testimony"  placeholder="Saisir votre témoignage"  value="Personnel au top !">
+                                        <input  disabled type="text" class="form-control" id="testimony"  placeholder="Saisir votre témoignage"  value="Personnel au top !">
                                     </div>
                                     <div class="mb-3">
                                         <label for="rate" class="form-label text-dark">Note</label>
-                                        <input type="number" class="form-control" id="rate"  value="5"  >
+                                        <input disabled type="number" class="form-control" id="rate"  value="5"  >
                                     </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                <button type="button" class="btn btn-primary">Ajouter</button>
                             </div>
                         </div>
                     </div>
@@ -208,15 +209,15 @@
                                 <form>
                                     <div class="mb-3">
                                         <label for="name" class="form-label text-dark">Nom</label>
-                                        <input type="mail" class="form-control" id="name"  placeholder="Saisir votre nom" value="John">
+                                        <input  disabled type="mail" class="form-control" id="name"  placeholder="Saisir votre nom" value="John">
                                     </div>
                                     <div class="mb-3">
                                         <label for="testimony" class="form-label text-dark">Témoignage</label>
-                                        <input type="text" class="form-control" id="testimony"  placeholder="Saisir votre témoignage"  value="Personnel au top !">
+                                        <input disabled type="text" class="form-control" id="testimony"  placeholder="Saisir votre témoignage"  value="Personnel au top !">
                                     </div>
                                     <div class="mb-3">
                                         <label for="rate" class="form-label text-dark">Note</label>
-                                        <input type="number" class="form-control" id="rate"  value="5"  >
+                                        <input disabled type="number" class="form-control" id="rate"  value="5"  >
                                     </div>
                                 </form>
                             </div>
@@ -249,15 +250,15 @@
                                 <form>
                                     <div class="mb-3">
                                         <label for="name" class="form-label text-dark">Nom</label>
-                                        <input type="mail" class="form-control" id="name"  placeholder="Saisir votre nom" value="John">
+                                        <input disabled type="mail" class="form-control" id="name"  placeholder="Saisir votre nom" value="John">
                                     </div>
                                     <div class="mb-3">
                                         <label for="testimony" class="form-label text-dark">Témoignage</label>
-                                        <input type="text" class="form-control" id="testimony"  placeholder="Saisir votre témoignage"  value="Personnel au top !">
+                                        <input disabled type="text" class="form-control" id="testimony"  placeholder="Saisir votre témoignage"  value="Personnel au top !">
                                     </div>
                                     <div class="mb-3">
                                         <label for="rate" class="form-label text-dark">Note</label>
-                                        <input type="number" class="form-control" id="rate"  value="5"  >
+                                        <input disabled type="number" class="form-control" id="rate"  value="5"  >
                                     </div>
                                 </form>
                             </div>
