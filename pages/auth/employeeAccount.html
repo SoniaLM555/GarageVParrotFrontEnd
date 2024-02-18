@@ -38,9 +38,52 @@
                         <button type="submit" class=" col btn btn-primary">Charger</button>
                     </div> 
                     <div class= "text-center pt-3">
-                        <button type="submit" class="btn btn-primary">Ajouter</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addVehicle">Ajouter</button>
                     </div>
                 </form>
+            </div>
+            <!-- Modal addVehicle-->
+            <div class="modal fade" id="addVehicle" tabindex="-1" aria-labelledby="addVehicleLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="addVehicleLabel"> Ajouter le véhicule ? </h3>          
+                        </div>  
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="brand" class="form-label">Marque et Modèle</label>
+                                    <input type="text" class="form-control" id="brand"  placeholder="Saisir la marque et le modèle" value="Peugeot 206">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="year" class="form-label">Année</label>
+                                    <input type="number" class="form-control" id="year"  placeholder="Saisir l'année de mise en circulation" value="20013">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="km" class="form-label">Km</label>
+                                    <input type="number" class="form-control" id="km"  placeholder="Saisir le kilométrage du véhicule" value="120000">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="price" class="form-label">Prix</label>
+                                    <input type="number" class="form-control" id="price" placeholder="Saisir le prix TTC du véhicule" value="4000">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="details" class="form-label">Description</label>
+                                    <input type="text" class="form-control" id="details" placeholder="Saisir la description du véhicule" value="Options : Sièges en cuir, clim.">
+                                </div>
+                                <div class= "row row-cols-2 pt-3">
+                                    <p class="col text-primary">Charger une image</p>
+                                    <button type="submit" class=" col btn btn-primary">Image</button>
+                                    <p class="col text-primary">Supprimer une image</p>
+                                </div> 
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-primary">Ajouter</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col bg-dark"><h3 class="text-center text-white">Modifier un véhicule</h3>
                 <form>
@@ -60,13 +103,35 @@
                         <input type="text" class="form-control" id="ref2"  placeholder="Saisir la référence de l'anonnce">
                     </div>
                     <div class= "text-center pt-3">
-                    <button type="button" class="btn btn-primary">Supprimer</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteVehicle">Supprimer</button>
                     </div>
                 </form>
             </div>
+            <!-- Modal deleteVehicle-->
+            <div class="modal fade" id="deleteVehicle" tabindex="-1" aria-labelledby="deleteVehicleLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="deletevehicleLabel"> Supprimer le véhicule ? </h3>          
+                        </div>  
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="ref2" class="form-label">Référence de l'annonce</label>
+                                    <input type="text" class="form-control" id="ref2"  placeholder="Saisir la référence de l'anonnce" value="RF456">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-primary">Supprimer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>           
         </div>
     </div>    
-     
+    
     <div class="container">
             <div>
                 <h2 class="text-center p-5 text-primary">Gestion des témoignages</h2>
@@ -87,9 +152,39 @@
                             <input type="number" class="form-control" id="rate"  >
                         </div>
                         <div class= "text-center pt-3">
-                            <button type="submit" class="btn btn-primary">Ajouter</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addTestimony">Ajouter</button>
                         </div>
                     </form>
+                </div>
+                <!-- Modal addTestimony-->
+                <div class="modal fade" id="addTestimony" tabindex="-1" aria-labelledby="addTestimonyLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5" id="addTestimonyLabel">Ajouter le témoignage ? </h3>         
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label text-dark">Nom</label>
+                                        <input type="mail" class="form-control" id="name"  placeholder="Saisir votre nom" value="John">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="testimony" class="form-label text-dark">Témoignage</label>
+                                        <input type="text" class="form-control" id="testimony"  placeholder="Saisir votre témoignage"  value="Personnel au top !">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="rate" class="form-label text-dark">Note</label>
+                                        <input type="number" class="form-control" id="rate"  value="5"  >
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col bg-dark"><h3 class="text-center text-white">Valider un témoignage</h3>
                     <form>
@@ -98,9 +193,39 @@
                             <input type="text" class="form-control" id="refreftestitmony"  placeholder="Saisir la référence de témoignage">
                         </div>
                         <div class= "text-center pt-3">
-                            <button type="submit" class="btn btn-primary">Valider le témoignage</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#approuveTestimony">Valider</button>
                         </div>    
                     </form>
+                </div>
+                <!-- Modal approuveTestimony-->
+                <div class="modal fade" id="approuveTestimony" tabindex="-1" aria-labelledby="approuveTestimonyLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5" id="approuveTestimonyLabel">Valider le témoignage ? </h3>         
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label text-dark">Nom</label>
+                                        <input type="mail" class="form-control" id="name"  placeholder="Saisir votre nom" value="John">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="testimony" class="form-label text-dark">Témoignage</label>
+                                        <input type="text" class="form-control" id="testimony"  placeholder="Saisir votre témoignage"  value="Personnel au top !">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="rate" class="form-label text-dark">Note</label>
+                                        <input type="number" class="form-control" id="rate"  value="5"  >
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                <button type="button" class="btn btn-primary">Valider</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col bg-secondary"><h3 class="text-center text-white">Supprimer un témoignage</h3>
                     <form>
@@ -109,11 +234,39 @@
                             <input type="text" class="form-control" id="reft2"  placeholder="Saisir la référence de témoignage">
                         </div>
                         <div class= "text-center pt-3">
-                        <button type="button" class="btn btn-primary">Supprimer</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteTestimony">Supprimer</button>
                         </div>
                     </form>
                 </div>
+                <!-- Modal deleteTestimony-->
+                <div class="modal fade" id="deleteTestimony" tabindex="-1" aria-labelledby="deleteTestimonyLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5" id="deleteTestimonyLabel">Supprimer le témoignage ? </h3>         
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label text-dark">Nom</label>
+                                        <input type="mail" class="form-control" id="name"  placeholder="Saisir votre nom" value="John">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="testimony" class="form-label text-dark">Témoignage</label>
+                                        <input type="text" class="form-control" id="testimony"  placeholder="Saisir votre témoignage"  value="Personnel au top !">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="rate" class="form-label text-dark">Note</label>
+                                        <input type="number" class="form-control" id="rate"  value="5"  >
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                <button type="button" class="btn btn-primary">Supprimer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
     </div>
-    
-</div>
