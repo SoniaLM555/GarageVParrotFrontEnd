@@ -9,6 +9,9 @@
         <div class="mb-3">
             <label for="EmailInput" class="form-label">E-mail</label>
             <input type="email" class="form-control" id="EmailInput"  placeholder="Saisir votre adresse e-mail">
+            <div class="invalid-feedback">
+                Mail et/ou mot de passe incorrect(s)
+            </div>
         </div>
         <div class="mb-3">
             <label for="PasswordInput" class="form-label">Mot de Passe</label>
@@ -16,7 +19,7 @@
         </div>
         <div class= "text-center pt-3">
             <a href="/" type="button" class="btn btn-primary" >Annuler</a>
-            <button type="submit" class="btn btn-primary">Se connecter</button>
+            <button type="button" class="btn btn-primary" id="btnSignin">Se connecter</button>
         </div>
     </form>
     <div class="text-center pt-3">
