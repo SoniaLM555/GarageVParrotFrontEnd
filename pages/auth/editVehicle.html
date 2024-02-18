@@ -38,10 +38,49 @@
                 <button type="button" class=" col btn btn-primary">Supprimer</button>
             </div> 
             <div class= "text-center pt-3">
-                <button type="button" class="btn btn-primary">Annuler</button>
-                <button type="submit" class="btn btn-primary">Modifier</button>
+                <a href="/" type="button" class="btn btn-primary" >Annuler</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editVehicle">Modifier</button>
                 
             </div>
         </form>
     </div> 
+</div>
+
+<!-- Modal editVehicle-->
+<div class="modal fade" id="editVehicle" tabindex="-1" aria-labelledby="editVehicleLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h3 class="modal-title fs-5" id="editVehicleLabel"> Modifier le véhicule ? </h3>          
+            </div>  
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="brand" class="form-label">Marque et Modèle</label>
+                        <input type="text" class="form-control" id="brand"  placeholder="Saisir la marque et le modèle" value="Peugeot 206">
+                    </div>
+                    <div class="mb-3">
+                        <label for="year" class="form-label">Année</label>
+                        <input type="number" class="form-control" id="year"  placeholder="Saisir l'année de mise en circulation" value="20013">
+                    </div>
+                    <div class="mb-3">
+                        <label for="km" class="form-label">Km</label>
+                        <input type="number" class="form-control" id="km"  placeholder="Saisir le kilométrage du véhicule" value="120000">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Prix</label>
+                        <input type="number" class="form-control" id="price" placeholder="Saisir le prix TTC du véhicule" value="4000">
+                    </div>
+                    <div class="mb-3">
+                        <label for="details" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="details" placeholder="Saisir la description du véhicule" value="Options : Sièges en cuir, clim.">
+                    </div>                   
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+            <button type="button" class="btn btn-primary">Modifier</button>
+            </div>
+        </div>
+    </div>
 </div>

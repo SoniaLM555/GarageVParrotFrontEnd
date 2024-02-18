@@ -8,23 +8,56 @@
     <div>
         <h3 class="text-center text-primary">Modifier un employé</h3>
     </div>
+    <div>
         <form>
-        <div class="mb-3">
-            <label for="name" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="name"  placeholder="Saisir le nom " value="Doe">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name"  placeholder="Saisir le nom " value="Doe">
+            </div>
+            <div class="mb-3">
+                <label for="surname" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="surname"  placeholder="Saisir le prénom " value="John">
+            </div>
+            <div class="mb-3">
+                <label for="EmailInput" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="EmailInput"  placeholder="Saisir l'adresse e-mail'" value="John@hotmail.fr">
+            </div>
+            <div class= "text-center pt-3">
+                <a href="/adminAccount" type="button" class="btn btn-primary" >Annuler</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editEmployee">Modifier</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal editEmployee-->
+<div class="modal fade" id="editEmployee" tabindex="-1" aria-labelledby="editEmployeeLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h3 class="modal-title fs-5" id="editEmployeeLabel"> Modifier l'employé? </h3>          
+            </div>  
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="name"  placeholder="Saisir le nom " value="Doe">
+                    </div>
+                    <div class="mb-3">
+                        <label for="surname" class="form-label">Prénom</label>
+                        <input type="text" class="form-control" id="surname"  placeholder="Saisir le prénom " value="John">
+                    </div>
+                    <div class="mb-3">
+                        <label for="EmailInput" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="EmailInput"  placeholder="Saisir l'adresse e-mail'" value="John@hotmail.fr">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+            <button type="button" class="btn btn-primary">Modifier</button>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="surname" class="form-label">Prénom</label>
-            <input type="text" class="form-control" id="surname"  placeholder="Saisir le prénom " value="John">
-        </div>
-        <div class="mb-3">
-            <label for="EmailInput" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="EmailInput"  placeholder="Saisir l'adresse e-mail'" value="John@hotmail.fr">
-        </div>
-        <div class= "text-center pt-3">
-            <button type="button" class="btn btn-primary">Annuler</button>
-            <button type="submit" class="btn btn-primary">Modifier</button>
-        </div>
-    </form>
+    </div>
 </div>
 
