@@ -47,7 +47,7 @@ function eraseCookie(name) {
 }
 
 function isConnected(){
-    if(getToken() == null || getToken == undefined){
+    if(getToken() == null || getToken() == undefined){
         return false;
     }
     else{
