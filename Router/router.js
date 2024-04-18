@@ -31,7 +31,7 @@ const LoadContentPage = async () => {
 //Vérifier les droit d'accès  à la page
 const allRolesArray = actualRoute.authorize;
 
-if(allRolesArray.lenght > 0){
+if(allRolesArray.length > 0){
   if(allRolesArray.includes("disconnected")){
     if(isConnected()){
       window.location.replace("/");
