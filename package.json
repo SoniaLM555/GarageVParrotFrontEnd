@@ -8,7 +8,7 @@
     "bootstrap-icons": "^1.11.3"
   },
   "scripts": {
-    "start": "app index.js",
+    "start": "app index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "open": "start http://127.0.0.1:5500/Index.html"
   },
