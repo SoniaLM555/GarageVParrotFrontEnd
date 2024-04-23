@@ -26,6 +26,7 @@ const LoadContentPage = async () => {
   const path = window.location.pathname;
   // Récupération de l'URL actuelle
   const actualRoute = getRouteByUrl(path);
+  console.log("teste2")
 
 
 //Vérifier les droit d'accès  à la page
@@ -72,10 +73,10 @@ showAndHideElementsForRoles();
 
 // Fonction pour gérer les événements de routage (clic sur les liens)
 const routeEvent = (event) => {
-  event = event || window.event;
   event.preventDefault();
   // Mise à jour de l'URL dans l'historique du navigateur
   window.history.pushState({}, "", event.target.href);
+  console.log("test")
   // Chargement du contenu de la nouvelle page
   LoadContentPage();
 };
